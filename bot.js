@@ -6,7 +6,7 @@ b.on("message",function(message){
         return;
     }
     var c=message.content;
-        var f=d.split(" ");
+    var f=c.split(" ");
     var d=f[0].slice(2);
     if(c.startsWith("p.")){
         if(!message.channel.name=="bots-only"){
