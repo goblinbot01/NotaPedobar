@@ -21,7 +21,7 @@ b.on("message",function(message){
                 if (d[1] != null) {
                     message.channel.fetchMessages({
 
-                        limit: d - 1
+                        limit: d[1] - 1
                     }).then(messages => {
                         message.channel.bulkDelete(messages)
                         message.channel.send("Deleted successfully " + d - 1 + " messages.").then(message => message.delete(5000))
