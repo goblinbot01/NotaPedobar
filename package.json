@@ -4,7 +4,7 @@
   "description": "Discord bot dedicated for ETP community.",
   "main": "bot.js",
   "dependencies": {
-    "discord.js": "11.3.2"
+    "discord.js": "^11.3.2"
   },
   "author": "goblin01",
   "license": "Apache-2.0"
