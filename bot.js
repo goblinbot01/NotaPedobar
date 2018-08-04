@@ -17,6 +17,19 @@ b.on("message",function(message){
             case "":
                 message.channel.send("Why I should respond to nothing?");
                 break;
+            case "pg":
+                if (d[1] != null) {
+                    message.channel.fetchMessages({
+
+                        limit: d - 1
+                    }).then(messages => {
+                        message.channel.bulkDelete(messages)
+                        message.channel.send("Deleted successfully " + d - 1 + " messages.").then(message => message.delete(5000))
+                    }).catch(err => {
+                        message.channel.send("Error occured while doing Bulk Delete. You can't delete messages older than 14 days.")
+                    })
+                }
+                break;
             case "game":
                 message.channel.send("You can access the game here: http://www.modd.io/play/escapethepedobear");
                 break;
