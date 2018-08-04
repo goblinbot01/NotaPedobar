@@ -18,6 +18,7 @@ b.on("message",function(message){
                 message.channel.send("Why I should respond to nothing?");
                 break;
             case "pg":
+                                if (!message.member.permissions.has("MANAGE_MESSAGES")) return;
                 if (d[1] != null) {
                     message.channel.fetchMessages({
 
