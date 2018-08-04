@@ -2,22 +2,10 @@
   "name": "notapedobear",
   "version": "1.0.0",
   "description": "Discord bot dedicated for ETP community.",
-  "main": "node bot.js",
+  "main": "bot.js",
   "dependencies": {
     "discord.js": "11.3.2"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/goblinbot01/notapedobar.git"
-  },
   "author": "goblin01",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/goblinbot01/notapedobar/issues"
-  },
-  "homepage": "https://github.com/goblinbot01/notapedobar#readme"
+  "license": "Apache-2.0"
 }
